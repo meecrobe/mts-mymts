@@ -1,0 +1,177 @@
+// Colors
+
+$red: #ed1c25
+$white: #ffffff
+$text: #58595b
+
+
+// Fonts
+
+$font: 'TruthCYR', sans-serif
+
+@font-face
+  font-family: 'TruthCYR'
+  src: url('../fonts/TruthCYR-Regular.otf')
+  font-weight: normal
+  font-style: normal
+
+// Base
+
+.clearfix:after
+  content: ""
+  display: table
+  clear: both
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+html,
+body
+  padding: 0
+  margin: 0
+
+html
+  font-size: 20px
+  color: $text
+body
+  font: 100%/1.5 $font
+  background-color: $red
+  min-width: 1500px
+  min-height: 1000px
+  overflow: hidden
+
+a
+  text-decoration: none
+
+h1
+  font-size: 2em
+  font-weight: normal
+  margin-top: 40px
+  margin-bottom: 85px
+
+h2
+  font-size: 1.5em
+  margin-bottom: 30px
+  margin-top: 0
+  font-weight: normal
+  
+
+ul
+  list-style-position: outside
+  li
+    font-size: 1.25em
+    color: $red
+    margin-bottom: 44px
+
+    span
+      color: $text
+
+.red
+  color: red
+
+.white
+  color: white
+
+.grey
+  color: $text
+
+.center
+  text-align: center
+  
+.left
+  text-align: left
+
+.right
+  text-align: right
+
+.show
+  display: block
+  
+.hide
+  display: none
+
+
+p
+  color: $text
+  font-size: 1em
+  margin-bottom: 70px
+  margin-top: 0
+
+hr
+  width: 1115px
+  border: 0
+  height: 2px
+  background: #dadada
+  margin: 0 auto
+
+.container
+  width: 1500px
+  height: 1000px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -500px
+  margin-left: -750px
+  overflow: hidden
+
+.slider-wrapper
+  width: 100%
+  height: 100%
+  background: $red url(../img/arrow.png) no-repeat
+  background-position: 3% 95%
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  overflow: hidden
+  margin: auto
+  z-index: 9998
+  position: fixed
+  display: none
+  cursor: pointer
+  
+
+  .popup-circle
+    width: 1400px
+    height: 1400px
+    border-radius: 50%
+    background: $white
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -700px
+    margin-top: -700px
+    display: none
+    
+
+
+.slide
+  z-index: 9999
+  display: none
+
+.img-1,
+.img-2,
+.img-3,
+.img-4
+  display: block
+  position: absolute
+  
+
+
+
+// Slides
+
+@import index
+@import slide-1
+@import slide-2
+@import slide-3
+@import slide-4
+@import slide-5
+@import slide-6
+@import slide-7
+@import slide-8
+@import slide-9
+@import slide-10
+@import slide-11
